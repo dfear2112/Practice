@@ -6,7 +6,7 @@
 <body> 
 <script type="text/javascript">
     FHIR.oauth2.authorize({
-        client_id: "my_client_id",
+        client_id: "72cc3ab8-0df9-4fae-b557-180f1d82fcac",
         redirect_uri: "https://mydomain.com/app/index.html",
         scope: "patient/*.read"
     });
