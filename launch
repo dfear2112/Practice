@@ -1,0 +1,31 @@
+
+<html>
+<head>
+    <script src="fhir-client.js"></script>
+</head>
+<body> 
+<script type="text/javascript">
+    FHIR.oauth2.authorize({
+        client_id: "my_client_id",
+        redirect_uri: "https://mydomain.com/app/index.html",
+        scope: "patient/*.read"
+    });
+ 
+</script>
+...
+</body>
+</html>
+
+<html>
+<head>
+    <script src="fhir-client.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>   
+<body>
+<script type="text/javascript">
+    FHIR.oauth2.ready(function(fhirClient){
+        ...use fhirClient to interact with the FHIR server...
+    });
+</script>
+</body>
+</html>
